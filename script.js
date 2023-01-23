@@ -1,5 +1,6 @@
+//get string
 function getComputerChoiseString(){
-const possiblePicks = ["rock","paper", "scissors"];
+const possiblePicks = ["Rock","Paper", "Scissors"];
 let computerPickedIndex = Math.floor(Math.random() * 3);
 let computersChoise = possiblePicks[computerPickedIndex];
 return computersChoise;
@@ -8,46 +9,50 @@ return computersChoise;
 function getPlayerChoiseString(){
 let playerInput= prompt("What's your Pick?");
 let playerChoise = playerInput.toLowerCase();
-//if to check if choise is valid
+playerChoise = playerChoise.charAt(0).toUpperCase() + playerChoise.slice(1);
 return playerChoise;
 }
 
-let computerString = getComputerChoiseString();
-let playerString = getPlayerChoiseString();
-console.log("pc " + computerString);
-console.log("you "+playerString);
+//string to num
+let computerSelection = getComputerChoiseString();
+let playerSelection = getPlayerChoiseString();
 
-function assignValueToString(player){
-let assignedValue;
-if (player == 'rock'){
-  assignedValue = 1;
-} else if (player == 'scissors'){
-  assignedValue = 2;
-} else if (player == 'paper')
-{assignedValue = 3} else {ssignedValue = 0;}
-return assignedValue;
-}
+/*console.log(computerString);
+console.log(playerString);*/
 
-let computerScore = assignValueToString(computerString);
-let playerScore = assignValueToString(playerString);
+function playRound(playerSelection, computerSelection) {
+let computerScore;
+if (computerSelection == 'Rock'){
+  computerScore = 1;
+} else if (computerSelection == 'Scissors'){
+  computerScore = 2;
+} else if (computerSelection == 'Paper')
+{computerScore = 3} else {computerScore = 0;}
 
-function determineWinner(player1Selection, player2selection){
-let winnerNumber = (3+player1Selection-player2selection)%3;
+let playerScore;
+if (playerSelection == 'Rock'){
+  playerScore = 1;
+} else if (playerSelection == 'Scissors'){
+  playerScore = 2;
+} else if (playerSelection == 'Paper')
+{playerScore = 3} else {playerScore= 0;}
 
+let winnerNumber = (3+computerScore-playerScore)%3;
+
+let results
 if(winnerNumber==2){
-  console.log("You lose! "+computerString+" beats "+playerString);
+  results = "You lose! "+computerSelection+" beats "+playerSelection;
 } else if (winnerNumber == 1){
-  console.log("You win! "+playerString.charAt(0).toUpperCase+" beats " +computerString);
+ results = "You win! "+playerSelection+ " beats " +computerSelection;
 } else {
-  console.log("It's a draw!")
+results = "It's a draw!";
 }
+return results;
+
 }
 
-determineWinner(computerScore, playerScore);
-//onsole.log(results);
+console.log(playRound(playerSelection, computerSelection));
 
-/*then return a string that declares 
-the winner of the round like so: "You Lose! Paper beats Rock"*/
 
 
 
