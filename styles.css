@@ -1,0 +1,46 @@
+
+*  { 
+    margin: 0; /*to remove default stylesheet*/
+}
+
+.contentContainer{
+font-family: Kodchasan, Ubuntu;
+background-color: #BCBCBC;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 30px;
+min-width: 600px;
+
+
+
+}
+
+h1{
+font-size: 25 px;
+padding-bottom: 10px;
+}
+
+h2{
+font-size: 20px;
+padding: 10px;
+}
+
+h3{
+font-size: 15px;
+padding-top: 0;
+padding-bottom: 10px;
+text-align: center;
+}
+
+.androidPhotoContainer{
+    display: flex;
+    flex: 1;
+}
+
+input{
+    width: 200px;
+    display: flex;
+    flex: 1;
+}
