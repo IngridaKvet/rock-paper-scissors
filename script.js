@@ -10,13 +10,9 @@ function getPlayerChoiseString(){
 let playerInput= prompt("What's your Pick?");
 let playerChoise = playerInput.toLowerCase();
 playerChoise = playerChoise.charAt(0).toUpperCase() + playerChoise.slice(1);
-return playerChoise;
 }
 
-
-
 // one round
-
 function playRound(computerSelection, playerSelection) {
 let computerScore;
 if (computerSelection == 'Rock'){
@@ -50,22 +46,18 @@ return results;
 }
 
 // 5 rounds
-
- let totalScoreComputer = 0;
-  let totalScorePlayer = 0
+let totalScoreComputer = 0;
+let totalScorePlayer = 0
 
 for (let i = 0; i < 5; i++){
-
-    let computerSelection = [];
-    let playerSelection = [];
+  let computerSelection = [];
+  let playerSelection = [];
   computerSelection[i] = getComputerChoiseString();
   playerSelection[i] = getPlayerChoiseString();
 
   console.log(computerSelection[i]);
   console.log(playerSelection[i]);
   
- // console.log(playRound(computerSelection[i],playerSelection[i]));
-
   let points = [];
   points[i] = playRound(computerSelection[i],playerSelection[i])
 
@@ -78,16 +70,13 @@ for (let i = 0; i < 5; i++){
   } else{
     console.log("It's a draw!");
   }
- 
 }
 
 if(totalScoreComputer < totalScorePlayer){
   console.log("You have won the game!");
 } else if (totalScoreCompurer > totalScorePlayer){
   console.log("You have lost the game...")
-}
-
-else {console.log("Final game is a draw...")}
+} else {console.log("Final game is a draw...")}
 
 
 
