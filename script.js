@@ -71,6 +71,7 @@ function determineWinner(computerSelection, playerSelection) {
   
   function changeRoundText(playerSelection,computerSelection, results){
     const roundResults = document.querySelector('.roundResults')
+    document.querySelector('.roundResults').setAttribute('style', 'padding:5px' )
       if (results == 'Win'){
       roundResults.textContent ="You win! " + playerSelection + " beat " + computerSelection;
       } else if(results == "Lose"){
@@ -100,6 +101,7 @@ buttons.forEach(button => button.addEventListener('click', (e)=>{
   changeRoundText(playerSelection,computerSelection, results[roundNr])
 
   const intermediateResults = document.querySelector('.intermediateResults')
+  document.querySelector('.intermediateResults').setAttribute('style', 'padding:5px' )
       if(results[roundNr] == 'Win'){
       playerScore ++;
       } else if(results[roundNr] == 'Lose'){
@@ -109,6 +111,7 @@ buttons.forEach(button => button.addEventListener('click', (e)=>{
   
   if (playerScore == 5 || computerScore == 5){
     const finalResults = document.querySelector('.finalResults')
+    document.querySelector('.finalResults').setAttribute('style', 'padding:5px' )
       if (playerScore == 5){
         finalResults.textContent ="You won the game!";
         } else if(computerScore == 5){
