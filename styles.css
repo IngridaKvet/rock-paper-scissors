@@ -1,46 +1,87 @@
 
-*  { 
+*{ 
     margin: 0; /*to remove default stylesheet*/
 }
 
+html, body {
+        height: 100%;
+        background-color: #BCBCBC;
+}
+
 .contentContainer{
-font-family: Kodchasan, Ubuntu;
-background-color: #BCBCBC;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-padding: 30px;
-min-width: 600px;
-
-
-
+    font-family: Kodchasan, Ubuntu;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 600px;
+    height: 100%;
 }
 
 h1{
-font-size: 25 px;
-padding-bottom: 10px;
+    font-size: 25 px;
+    padding-bottom: 10px;
 }
 
 h2{
-font-size: 20px;
-padding: 10px;
+    font-size: 20px;
+    padding: 10px;
 }
 
 h3{
-font-size: 15px;
-padding-top: 0;
-padding-bottom: 10px;
-text-align: center;
+    font-size: 15px;
+    padding-top: 0;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.roundResults,
+.intermediateResults,
+.finalResults{
+    font-weight: 700;
 }
 
 .androidPhotoContainer{
     display: flex;
-    flex: 1;
+    flex-direction: row-reverse;
 }
 
-input{
+img{
+    transform: rotate(180deg);
+}
+
+/* Buttons */
+#playerButtonPaper:hover,
+#playerButtonScissors:hover,
+#playerButtonRock:hover{
+    transition-duration: 0.4s;
+    background-color: #7bb500;
+    border-radius: 10%;
+  }
+  
+#Paper{
     width: 200px;
-    display: flex;
-    flex: 1;
+    height: 300px; 
+    background-image: url(file:///home/ingrida/repos/rock-paper-scissors/img/zombis1.png);
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+}
+
+#Scissors{
+    width: 200px;
+    height: 300px; 
+    background-image: url(file:///home/ingrida/repos/rock-paper-scissors/img/zombis2.png);
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+}
+
+#Rock{
+    width: 200px;
+    height: 300px; 
+    background-image: url(file:///home/ingrida/repos/rock-paper-scissors/img/zombis3.png);
+    background-size: cover;
+    background-color: transparent;
+    border: none;
 }
