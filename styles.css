@@ -50,9 +50,9 @@ h3{
 }
 
 /* Buttons */
-#playerButtonPaper:hover,
-#playerButtonScissors:hover,
-#playerButtonRock:hover{
+#Paper:hover,
+#Scissors:hover,
+#Rock:hover{
     transition-duration: 0.4s;
     background-color: #7bb500;
     border-radius: 10%;

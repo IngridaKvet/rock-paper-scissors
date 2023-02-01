@@ -1,3 +1,7 @@
+document.getElementById("Zombie1").disabled = true; 
+document.getElementById("Zombie2").disabled = true; 
+document.getElementById("Zombie3").disabled = true; 
+
 function getComputerChoiseString(){
   const possiblePicks = ["Rock","Paper", "Scissors"];
   let computerPickedIndex = Math.floor(Math.random() * 3);
