@@ -23,17 +23,17 @@ function changeButtonStyles(playerSelection, computerSelection){
                   }
 
         if (computerSelection == "Rock"){
-          document.getElementById("imgthree").setAttribute('style', 'background-color:#00c7d0; border-radius:10%' )
-          document.getElementById("imgone").setAttribute('style', 'background-color:#BCBCBC; border-radius:10%' )
-          document.getElementById("imgtwo").setAttribute('style', 'background-color:#BCBCB; border-radius:10%' )
+          document.getElementById("Zombie3").setAttribute('style', 'background-color:#00c7d0; border-radius:10%' )
+          document.getElementById("Zombie1").setAttribute('style', 'background-color:#BCBCBC; border-radius:10%' )
+          document.getElementById("Zombie2").setAttribute('style', 'background-color:#BCBCB; border-radius:10%' )
               } else if (computerSelection == "Paper"){
-                document.getElementById("imgone").setAttribute('style', 'background-color:#00c7d0; border-radius:10%' )
-                document.getElementById("imgtwo").setAttribute('style', 'background-color:#BCBCBC; border-radius:10%' )
-                document.getElementById("imgthree").setAttribute('style', 'background-color:#BCBCB; border-radius:10%' )
+                document.getElementById("Zombie1").setAttribute('style', 'background-color:#00c7d0; border-radius:10%' )
+                document.getElementById("Zombie2").setAttribute('style', 'background-color:#BCBCBC; border-radius:10%' )
+                document.getElementById("Zombie3").setAttribute('style', 'background-color:#BCBCB; border-radius:10%' )
                     } else{
-                      document.getElementById("imgtwo").setAttribute('style', 'background-color:#00c7d0; border-radius:10%' )
-                      document.getElementById("imgone").setAttribute('style', 'background-color:#BCBCBC; border-radius:10%' )
-                      document.getElementById("imgthree").setAttribute('style', 'background-color:#BCBCB; border-radius:10%' )
+                      document.getElementById("Zombie2").setAttribute('style', 'background-color:#00c7d0; border-radius:10%' )
+                      document.getElementById("Zombie1").setAttribute('style', 'background-color:#BCBCBC; border-radius:10%' )
+                      document.getElementById("Zombie3").setAttribute('style', 'background-color:#BCBCB; border-radius:10%' )
                     }
         }     
 } 

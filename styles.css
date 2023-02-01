@@ -18,7 +18,7 @@ html, body {
 }
 
 h1{
-    font-size: 25 px;
+    font-size: 25px;
     padding-bottom: 5px;
     padding-top: 20px;
     margin: 0;
@@ -47,10 +47,6 @@ h3{
 .androidPhotoContainer{
     display: flex;
     flex-direction: row-reverse;
-}
-
-img{
-    transform: rotate(180deg);
 }
 
 /* Buttons */
@@ -88,3 +84,35 @@ img{
     background-color: transparent;
     border: none;
 }
+
+#Zombie1{
+    width: 150px;
+    height: 250px; 
+    background-image: url(img/android1.png);
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+    transform: rotate(180deg);
+}
+#Zombie2{
+    width: 150px;
+    height: 250px; 
+    background-image: url(img/android2.png);
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+    transform: rotate(180deg);
+}
+
+#Zombie3{
+    width: 150px;
+    height: 250px; 
+    background-image: url(img/android3.png);
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+    transform: rotate(180deg);
+}
+
+
+
