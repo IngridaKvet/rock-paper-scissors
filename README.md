@@ -1,1 +1,2 @@
 # rock-paper-scissors
+This is rock paper scissors game created vanilla js, html and css. The hardest part for this project was to understand how event listeners work, and how the sintax concerning them should be written. The illustrations I did for this game myself using Krita, however what could be fixed is the illustration centering, as now the hands are not centered perfectly. Apart that I'm pretty happy with this little project.
